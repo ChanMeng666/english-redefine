@@ -17,21 +17,22 @@ export class ApiError extends Error {
 
 export const validateWord = (word: string): string | null => {
     if (!word) {
-        return '请输入要解释的词语';
+        return 'Please enter a word';
     }
 
-    if (word.length > 10) {
-        return '词语长度不能超过10个字符';
+    if (word.length > 50) {
+        return 'Word length cannot exceed 50 characters';
     }
 
-    // 验证是否包含汉字
-    if (!/[\u4e00-\u9fa5]/.test(word)) {
-        return '请输入包含汉字的词语';
+    // 修改英文验证规则，使其更包容
+    // 允许：英文字母、空格、连字符、撇号、句点
+    if (!/^[a-zA-Z\s\-'\.]+$/.test(word)) {
+        return 'Please only use English letters and basic punctuation';
     }
 
-    // 验证是否包含特殊字符
+    // 验证是否包含危险的特殊字符
     if (/[<>{}[\]\\\/]/.test(word)) {
-        return '词语不能包含特殊字符';
+        return 'Word cannot contain special characters';
     }
 
     return null;
@@ -45,13 +46,13 @@ export const getErrorMessage = (error: unknown): string => {
     if (error instanceof ApiError) {
         switch (error.status) {
             case 429:
-                return '请求过于频繁，请稍后再试';
+                return 'Requests are too frequent, please try again later';
             case 401:
-                return 'API密钥无效，请联系管理员';
+                return 'API key is invalid, please contact the administrator';
             case 503:
-                return '服务暂时不可用，请稍后再试';
+                return 'Service is temporarily unavailable. Please try again later.';
             default:
-                return error.message || '服务器错误，请稍后重试';
+                return error.message || 'Server error, please try again later';
         }
     }
 
@@ -59,5 +60,5 @@ export const getErrorMessage = (error: unknown): string => {
         return error.message;
     }
 
-    return '发生未知错误';
+    return 'An unknown error has occurred.';
 };

@@ -48,7 +48,7 @@ const HanyuCardGenerator = () => {
             const data = await response.json();
 
             if (!response.ok) {
-                throw new Error(data.error || '生成失败，请稍后重试');
+                throw new Error(data.error || 'Generation failed, please try again later');
             }
 
             if (data.error) {
@@ -74,20 +74,6 @@ const HanyuCardGenerator = () => {
                     variants={cardVariants}
                 >
                     <Card className="shadow-lg">
-                        {/*<CardHeader className="space-y-2 px-4 sm:px-6">*/}
-                        {/*    <motion.div*/}
-                        {/*        initial={{ opacity: 0, y: -20 }}*/}
-                        {/*        animate={{ opacity: 1, y: 0 }}*/}
-                        {/*        transition={{ delay: 0.2 }}*/}
-                        {/*    >*/}
-                        {/*        <CardTitle className="text-center text-2xl sm:text-3xl font-bold break-words">*/}
-                        {/*            汉语新解卡片生成器*/}
-                        {/*        </CardTitle>*/}
-                        {/*        <p className="text-center text-sm text-slate-500 mt-2">*/}
-                        {/*            用现代视角重新诠释汉语词汇*/}
-                        {/*        </p>*/}
-                        {/*    </motion.div>*/}
-                        {/*</CardHeader>*/}
                         <CardHeader className="space-y-2 px-4 sm:px-6">
                             <motion.div
                                 initial={{opacity: 0, y: -20}}
@@ -95,11 +81,11 @@ const HanyuCardGenerator = () => {
                                 transition={{delay: 0.2}}
                             >
                                 <CardTitle className="text-center text-2xl sm:text-3xl font-bold break-words">
-                                    汉语新解卡片生成器
+                                    English Redefine Card Generator
                                 </CardTitle>
                                 <div className="flex flex-col items-center space-y-2">
                                     <p className="text-center text-sm text-slate-500 mt-2">
-                                        用现代视角重新诠释汉语词汇
+                                        Redefine English words with modern perspectives
                                     </p>
                                     <p className="text-center text-xs text-slate-400 flex items-center gap-1.5">
                                         Created by{' '}
@@ -125,11 +111,11 @@ const HanyuCardGenerator = () => {
                                 <div className="relative">
                                     <Input
                                         type="text"
-                                        placeholder="输入想要重新诠释的汉语词汇..."
+                                        placeholder="Enter an English word to redefine..."
                                         value={word}
                                         onChange={(e) => setWord(e.target.value)}
                                         className="w-full py-4 sm:py-6 text-base sm:text-lg"
-                                        maxLength={10}
+                                        maxLength={50}
                                         disabled={loading}
                                     />
                                     <AnimatePresence>
@@ -155,10 +141,10 @@ const HanyuCardGenerator = () => {
                                         {loading ? (
                                             <>
                                                 <Loader2 className="mr-2 h-4 w-4 sm:h-5 sm:w-5 animate-spin" />
-                                                正在生成新解...
+                                                A redefine card is being generated...
                                             </>
                                         ) : (
-                                            '生成新解卡片'
+                                            'Generate redefine card'
                                         )}
                                     </Button>
                                 </motion.div>
@@ -172,7 +158,7 @@ const HanyuCardGenerator = () => {
                                 transition={{ delay: 0.3 }}
                             >
                                 <div className="flex justify-between text-xs sm:text-sm text-slate-500">
-                                    <span>剩余请求次数</span>
+                                    <span>Number of requests remaining</span>
                                     <span>{remainingRequests}/5</span>
                                 </div>
                                 <Progress value={progressValue} className="h-1.5 sm:h-2" />

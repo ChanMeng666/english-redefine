@@ -20,7 +20,7 @@ const DownloadButton: React.FC<DownloadButtonProps> = ({ word, explanation }) =>
         // 创建下载链接
         const link = document.createElement('a');
         link.href = url;
-        link.download = `${word}-汉语新解.svg`;
+        link.download = `${word}-EnglishRedefine.svg`;
         document.body.appendChild(link);
         link.click();
 
@@ -36,7 +36,7 @@ const DownloadButton: React.FC<DownloadButtonProps> = ({ word, explanation }) =>
             className="w-full sm:w-auto text-sm flex items-center h-9"
         >
             <Download className="w-4 h-4 mr-2" />
-            下载卡片
+            Download Card
         </Button>
     );
 };
