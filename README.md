@@ -1,14 +1,12 @@
-# Chinese Redefine
-
-[English](README.md) | [简体中文](README.zh-CN.md)
+# English Redefine
 
 > Modern redefinition of Chinese words with contemporary perspectives, powered by Gemini AI.
 
 ## Overview
-Chinese Redefine is a modern web application that offers fresh, contemporary interpretations of Chinese words. By leveraging Gemini AI, it provides unique, context-aware explanations that bridge traditional meanings with modern perspectives.
+English Redefine is a modern web application that offers fresh, contemporary interpretations of English words. By leveraging Gemini AI, it provides unique, context-aware explanations that bridge traditional meanings with modern perspectives.
 
 ## Features
-- 🎯 Modern interpretation of Chinese words
+- 🎯 Modern interpretation of English words
 - 🤖 Powered by Google's Gemini AI
 - 💫 Smooth animations with Framer Motion
 - 🎨 Beautiful UI with Tailwind CSS and shadcn/ui
@@ -35,7 +33,7 @@ Chinese Redefine is a modern web application that offers fresh, contemporary int
 ### Installation
 1. Clone the repository
 ```bash
-git clone https://github.com/ChanMeng666/chinese-redefine.git
+git clone https://github.com/ChanMeng666/english-redefine.git
 ```
 
 2. Install dependencies
@@ -59,9 +57,6 @@ yarn dev
 ```
 
 5. Open [http://localhost:3000](http://localhost:3000) to view the application
-
-## Documentation
-For more detailed documentation in Chinese, please see [README.zh-CN.md](./README.zh-CN.md)
 
 ## Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.
