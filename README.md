@@ -8,6 +8,9 @@
 </div>
 <br/>
 
+![screencapture-english-redefine-vercel-app-2024-12-06-12_37_53](https://github.com/user-attachments/assets/c601b8c5-0560-4b2b-9833-40c8f775c405)
+
+
 # Features
 Experience English words in a new light with our modern redefinition platform.
 
