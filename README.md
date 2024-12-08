@@ -1,27 +1,43 @@
-# English Redefine
+<div align="center">
+ <h1> 🔄 English Redefine</h1>
+ <img src="https://img.shields.io/badge/Next.js-14-black" />
+ <img src="https://img.shields.io/badge/TypeScript-5-blue" />
+ <img src="https://img.shields.io/badge/React-18-61dafb" />
+ <img src="https://img.shields.io/badge/Tailwind-3-38bdf8" />
+ <img src="https://img.shields.io/badge/License-MIT-green" />
+</div>
+<br/>
 
-> Modern redefinition of Chinese words with contemporary perspectives, powered by Gemini AI.
+# Features
+Experience English words in a new light with our modern redefinition platform.
 
-## Overview
-English Redefine is a modern web application that offers fresh, contemporary interpretations of English words. By leveraging Gemini AI, it provides unique, context-aware explanations that bridge traditional meanings with modern perspectives.
+### 🎯 Modern Word Interpretation
+Get fresh, contemporary explanations of English words that bridge traditional meanings with modern perspectives.
 
-## Features
-- 🎯 Modern interpretation of English words
-- 🤖 Powered by Google's Gemini AI
-- 💫 Smooth animations with Framer Motion
-- 🎨 Beautiful UI with Tailwind CSS and shadcn/ui
-- 📱 Fully responsive design
-- 💾 SVG card export functionality
-- ⚡ Built with Next.js for optimal performance
+### 🤖 Powered by Gemini AI
+Leverage Google's advanced Gemini AI technology for intelligent and contextual word redefinitions.
+
+### 🎨 Beautiful Card Generation
+Generate visually appealing cards showcasing word definitions with modern design aesthetics.
+
+### 💫 Smooth Animations
+Enjoy fluid transitions and engaging animations powered by Framer Motion.
+
+### 📱 Responsive Design
+Perfect experience across all devices - desktop, tablet, and mobile.
+
+### 💾 SVG Export
+Download and share your generated definition cards in high-quality SVG format.
+
+### ⚡ Optimized Performance
+Built with Next.js for optimal loading speeds and performance.
 
 ## Tech Stack
-- **Framework:** Next.js 14
-- **Styling:** Tailwind CSS
-- **UI Components:** shadcn/ui
-- **Animations:** Framer Motion
-- **AI Integration:** Google Gemini API
-- **Language:** TypeScript
-- **Deployment:** Vercel
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Framer](https://img.shields.io/badge/Framer-black?style=for-the-badge&logo=framer&logoColor=blue)
 
 ## Getting Started
 
@@ -62,10 +78,10 @@ yarn dev
 Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
-MIT License - see the [LICENSE](LICENSE) file for details.
+See the [Apache-2.0 license](LICENSE) file for details.
 
 ## Author
-
 **Chan Meng**
-- LinkedIn: [chanmeng666](https://www.linkedin.com/in/chanmeng666/)
-- GitHub: [ChanMeng666](https://github.com/ChanMeng666)
+[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=normal&logo=github&logoColor=white)](https://github.com/ChanMeng666)
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=normal&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/chanmeng666/)
+
