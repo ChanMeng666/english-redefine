@@ -24,11 +24,11 @@ const DeveloperShowcase = () => {
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
               <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-full blur-xl"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-xl blur-xl"></div>
                 <img
                   src="/chan_logo.svg"
                   alt="Chan Meng Logo"
-                  className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-white/80 p-2 shadow-sm"
+                  className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-lg bg-white/80 p-2 shadow-sm"
                 />
               </div>
             </motion.div>
