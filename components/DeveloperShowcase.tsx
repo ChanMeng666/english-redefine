@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -25,9 +26,11 @@ const DeveloperShowcase = () => {
             >
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-xl blur-xl"></div>
-                <img
+                <Image
                   src="/chan_logo.svg"
                   alt="Chan Meng Logo"
+                  width={96}
+                  height={96}
                   className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-lg bg-white/80 p-2 shadow-sm"
                 />
               </div>
@@ -49,7 +52,7 @@ const DeveloperShowcase = () => {
 
               <p className="text-sm text-slate-700 leading-relaxed">
                 Crafting modern web applications with cutting-edge technology.
-                <span className="hidden sm:inline"> Need a custom website or web application? Let's bring your ideas to life!</span>
+                <span className="hidden sm:inline"> Need a custom website or web application? Let&apos;s bring your ideas to life!</span>
               </p>
 
               {/* Action Buttons */}
@@ -101,7 +104,7 @@ const DeveloperShowcase = () => {
                 onClick={() => window.open('mailto:chanmeng.dev@gmail.com?subject=Custom Development Inquiry', '_blank')}
                 className="text-blue-600 hover:text-blue-700 underline decoration-1 underline-offset-2 transition-colors"
               >
-                Let's discuss your project
+                Let&apos;s discuss your project
               </button>
             </p>
           </motion.div>
