@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Loader2, AlertCircle } from 'lucide-react';
 import { Alert, AlertDescription } from '@/components/ui/alert';
 import ResultCard from './ResultCard';
+import DeveloperShowcase from './DeveloperShowcase';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Progress } from "@/components/ui/progress";
 import {getErrorMessage, validateWord} from "@/lib/errors";
@@ -90,7 +91,7 @@ const HanyuCardGenerator = () => {
                                     <p className="text-center text-xs text-slate-400 flex items-center gap-1.5">
                                         Created by{' '}
                                         <a
-                                            href="https://github.com/ChanMeng666/chinese-redefine"
+                                            href="https://github.com/ChanMeng666/english-redefine"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="text-blue-500 hover:text-blue-600 transition-colors duration-200 inline-flex items-center gap-1.5"
@@ -197,6 +198,9 @@ const HanyuCardGenerator = () => {
                             </AnimatePresence>
                         </CardContent>
                     </Card>
+                    
+                    {/* Developer Showcase */}
+                    <DeveloperShowcase />
                 </motion.div>
             </div>
         </div>
