@@ -42,12 +42,24 @@ One-click **FREE** deployment for your modern word interpretation needs.
 > Experience English words in a completely new light with our AI-powered redefinition platform.
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/c601b8c5-0560-4b2b-9833-40c8f775c405" alt="Main Interface" width="800"/>
-  <p><em>Main Interface - Clean, intuitive word input and generation</em></p>
+  <img src="public/screenshots/screencapture-english-redefine-vercel-app-2025-09-07-16_39_22.png" alt="Complete Website Interface" width="800"/>
+  <p><em>Complete Website Interface - Full application view with modern design</em></p>
 </div>
 
 <details>
 <summary><kbd>📱 More Screenshots</kbd></summary>
+
+<div align="center">
+  <img src="public/screenshots/屏幕截图 2025-09-07 163954.png" alt="Additional Interface View" width="600"/>
+  <p><em>Additional Interface View - Detailed application functionality</em></p>
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/c601b8c5-0560-4b2b-9833-40c8f775c405" alt="Main Interface Demo" width="600"/>
+  <p><em>Main Interface Demo - Clean, intuitive word input and generation</em></p>
+</div>
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/189728c5-61b7-445d-b914-9750cf4cb967" alt="Generated Card Example" width="600"/>
