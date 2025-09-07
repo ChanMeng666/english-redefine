@@ -6,10 +6,10 @@ import { headers } from 'next/headers';
 // 初始化 Gemini
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || '');
 
-// 速率限制状态
+// 速率限制状态 (降低免费API的请求频率)
 const RATE_LIMIT = {
-    windowMs: 60 * 1000,
-    maxRequests: 5,
+    windowMs: 60 * 1000, // 1分钟窗口
+    maxRequests: 3,      // 每分钟最多3次请求 (适应免费配额)
     requests: new Map<string, { count: number; timestamp: number }>()
 };
 
@@ -83,22 +83,11 @@ export async function POST(req: Request) {
         }
 
         try {
-            // 使用 Gemini-Pro 模型
-            const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+            // 使用 Gemini-1.5-Flash 模型 (更经济，适合免费配额)
+            const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
-            // 更温和的 prompt
-            const prompt = `
-                Please act as a creative modern linguist who reinterprets English words with fresh perspectives.
-                
-                Requirements:
-                1. Maintain a positive and insightful tone
-                2. Connect with modern life scenarios
-                3. Use appropriate metaphors and humor
-                4. Reflect on life
-                
-                Please provide a new interpretation (no more than 100 words) for the word "${word}".
-                Note: Provide the explanation text directly, without any formatting or prefix.
-            `;
+            // 简化的 prompt (节省token消耗)
+            const prompt = `As a creative linguist, provide a fresh, positive interpretation of "${word}" in modern life context. Use metaphors and insight. Max 80 words. Response should be direct without formatting.`;
 
             const result = await model.generateContent(prompt);
             // const response = await result.response;
@@ -141,9 +130,9 @@ export async function POST(req: Request) {
                     );
                 }
                 // 处理配额错误
-                if (error.message.includes('quota')) {
+                if (error.message.includes('quota') || error.message.includes('Too Many Requests') || error.message.includes('429')) {
                     return NextResponse.json(
-                        { error: 'API call quota has been exhausted, please try again later' },
+                        { error: 'API调用配额已用完，请稍后再试。如果问题持续存在，请检查您的API key配额或升级到付费版本。' },
                         { status: 429 }
                     );
                 }

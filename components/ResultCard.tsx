@@ -107,9 +107,8 @@ const ResultCard = ({ word, explanation }: ResultCardProps) => {
                             animate={{opacity: 1, height: 'auto'}}
                             exit={{opacity: 0, height: 0}}
                             transition={{duration: 0.3}}
-                            className="overflow-hidden"
                         >
-                            <div className="w-full overflow-x-auto">
+                            <div className="w-full">
                                 <SVGPreview word={word} explanation={explanation}/>
                             </div>
                         </motion.div>
