@@ -4,7 +4,7 @@
 
 # 🔄 English Redefine<br/><h3>AI-Powered Modern Word Interpretation Platform</h3>
 
-An innovative English language platform that leverages Google's Gemini AI to provide fresh, contemporary interpretations of English words.<br/>
+An innovative English language platform that leverages OpenAI to provide fresh, contemporary interpretations of English words.<br/>
 Supports **beautiful card generation**, **SVG export**, and **responsive design** with extensible architecture.<br/>
 One-click **FREE** deployment for your modern word interpretation needs.
 
@@ -19,7 +19,7 @@ One-click **FREE** deployment for your modern word interpretation needs.
 <!-- SHIELD GROUP -->
 
 [![][github-release-shield]][github-release-link]
-[![][vercel-shield]][vercel-link]
+[![][cloudflare-shield]][cloudflare-link]
 [![][github-stars-shield]][github-stars-link]
 [![][github-forks-shield]][github-forks-link]<br/>
 [![][github-issues-shield]][github-issues-link]
@@ -392,8 +392,8 @@ pnpm install
 # Create environment file
 cp .env.example .env.local
 
-# Add your Gemini API key
-echo "GEMINI_API_KEY=your_gemini_api_key_here" >> .env.local
+# Add your OpenAI API key
+echo "OPENAI_API_KEY=your_openai_api_key_here" >> .env.local
 ```
 
 **4. Start Development**
@@ -409,8 +409,8 @@ npm run dev
 Create `.env.local` file with:
 
 ```bash
-# Required: Google Gemini API Key
-GEMINI_API_KEY=your_gemini_api_key_here
+# Required: OpenAI API Key
+OPENAI_API_KEY=your_openai_api_key_here
 
 # Optional: Custom configuration
 NEXT_PUBLIC_APP_NAME=English Redefine
@@ -418,41 +418,33 @@ NEXT_PUBLIC_MAX_REQUESTS=5
 ```
 
 > [!TIP]
-> Get your free Gemini API key from [Google AI Studio](https://makersuite.google.com/app/apikey)
+> Get your OpenAI API key from [OpenAI Platform](https://platform.openai.com/api-keys)
 
 ## 🛳 Deployment
 
 ### Cloud Deployment (Recommended)
 
-**Deploy with Vercel:**
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/ChanMeng666/english-redefine&env=GEMINI_API_KEY&envDescription=Google%20Gemini%20API%20Key%20required%20for%20AI%20functionality)
-
-**Manual Deployment:**
+**Deploy with Cloudflare Pages:**
 
 ```bash
-# Install Vercel CLI
-npm i -g vercel
+# Install dependencies
+npm install
 
-# Deploy to production
-vercel --prod
+# Login to Cloudflare
+npx wrangler login
+
+# Set your OpenAI API key as a secret
+npx wrangler secret put OPENAI_API_KEY
+
+# Build and deploy
+npm run deploy
 ```
-
-**Other Platforms:**
-
-<div align="center">
-
-|           Deploy with Netlify            |                     Deploy with Railway                      |
-| :-------------------------------------: | :---------------------------------------------------------: |
-| [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ChanMeng666/english-redefine) | [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/ChanMeng666/english-redefine) |
-
-</div>
 
 ### Environment Variables
 
 | Variable | Description | Required | Example |
 |----------|-------------|----------|---------|
-| `GEMINI_API_KEY` | Google Gemini API key for AI functionality | ✅ | `AIza...` |
+| `OPENAI_API_KEY` | OpenAI API key for AI functionality | ✅ | `sk-...` |
 | `NEXT_PUBLIC_APP_NAME` | Application name | 🔶 | `English Redefine` |
 
 > [!WARNING]
@@ -616,7 +608,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 [back-to-top]: https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square
 
 <!-- Project Links -->
-[project-link]: https://english-redefine.vercel.app/
+[project-link]: https://english-redefine.pages.dev/
 [docs-link]: https://github.com/ChanMeng666/english-redefine#readme
 
 <!-- GitHub Links -->
@@ -628,7 +620,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <!-- Shield Badges -->
 [github-release-shield]: https://img.shields.io/github/v/release/ChanMeng666/english-redefine?color=369eff&labelColor=black&logo=github&style=flat-square
-[vercel-shield]: https://img.shields.io/badge/vercel-online-55b467?labelColor=black&logo=vercel&style=flat-square
+[cloudflare-shield]: https://img.shields.io/badge/cloudflare-online-55b467?labelColor=black&logo=cloudflare&style=flat-square
 [github-contributors-shield]: https://img.shields.io/github/contributors/ChanMeng666/english-redefine?color=c4f042&labelColor=black&style=flat-square
 [github-forks-shield]: https://img.shields.io/github/forks/ChanMeng666/english-redefine?color=8ae8ff&labelColor=black&style=flat-square
 [github-stars-shield]: https://img.shields.io/github/stars/ChanMeng666/english-redefine?color=ffcb47&labelColor=black&style=flat-square
@@ -636,7 +628,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 [github-license-shield]: https://img.shields.io/badge/license-MIT-white?labelColor=black&style=flat-square
 
 <!-- Badge Variants -->
-[demo-shield-badge]: https://img.shields.io/badge/TRY%20DEMO-ONLINE-55b467?labelColor=black&logo=vercel&style=for-the-badge
+[demo-shield-badge]: https://img.shields.io/badge/TRY%20DEMO-ONLINE-55b467?labelColor=black&logo=cloudflare&style=for-the-badge
 
 <!-- Social Share Links -->
 [share-x-link]: https://x.com/intent/tweet?hashtags=AI,English,Education&text=Check%20out%20English%20Redefine%20-%20AI-powered%20word%20interpretation!&url=https%3A%2F%2Fgithub.com%2FChanMeng666%2Fenglish-redefine
@@ -653,5 +645,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <!-- Images -->
 [image-star]: https://github.com/user-attachments/assets/c601b8c5-0560-4b2b-9833-40c8f775c405
-[vercel-link]: https://english-redefine.vercel.app/
+[cloudflare-link]: https://english-redefine.pages.dev/
 
