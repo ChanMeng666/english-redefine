@@ -75,7 +75,7 @@ One-click **FREE** deployment for your modern word interpretation needs.
 
 <div align="center">
 
-[![Demo Video](https://img.youtube.com/vi/DEMO_VIDEO_ID/maxresdefault.jpg)](https://english-redefine.vercel.app/)
+[![Demo Video](https://img.youtube.com/vi/DEMO_VIDEO_ID/maxresdefault.jpg)](https://english-redefine.chanmeng-dev.workers.dev/)
 
 *Click to visit the live application*
 
@@ -608,7 +608,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 [back-to-top]: https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square
 
 <!-- Project Links -->
-[project-link]: https://english-redefine.pages.dev/
+[project-link]: https://english-redefine.chanmeng-dev.workers.dev/
 [docs-link]: https://github.com/ChanMeng666/english-redefine#readme
 
 <!-- GitHub Links -->
@@ -645,5 +645,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <!-- Images -->
 [image-star]: https://github.com/user-attachments/assets/c601b8c5-0560-4b2b-9833-40c8f775c405
-[cloudflare-link]: https://english-redefine.pages.dev/
+[cloudflare-link]: https://english-redefine.chanmeng-dev.workers.dev/
 
