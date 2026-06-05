@@ -647,3 +647,18 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 [image-star]: https://github.com/user-attachments/assets/c601b8c5-0560-4b2b-9833-40c8f775c405
 [cloudflare-link]: https://english-redefine.chanmeng-dev.workers.dev/
 
+
+---
+
+<!-- CHAN MENG PERSONAL BRAND -->
+<div align="center">
+  <a href="https://github.com/ChanMeng666" target="_blank">
+    <img src="./.github/brand/chan-meng-logo.svg" alt="Chan Meng" width="160" />
+  </a>
+
+  <p><strong>Chan Meng</strong><br/>Need a custom app like this one? I build them — let's talk.</p>
+
+  <a href="mailto:chanmeng.dev@gmail.com"><img src="https://img.shields.io/badge/Email-chanmeng.dev@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email Chan Meng"/></a>
+  <a href="https://github.com/ChanMeng666"><img src="https://img.shields.io/badge/GitHub-ChanMeng666-181717?style=flat-square&logo=github&logoColor=white" alt="Chan Meng on GitHub"/></a>
+</div>
+<!-- /CHAN MENG PERSONAL BRAND -->
