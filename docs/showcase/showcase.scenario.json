@@ -1,0 +1,49 @@
+{
+  "baseUrl": "https://english-redefine.chanmeng-dev.workers.dev/",
+  "reducedMotion": "reduce",
+  "viewports": {
+    "desktop": { "width": 1280, "height": 800, "deviceScaleFactor": 2 },
+    "mobile": { "width": 390, "height": 844, "deviceScaleFactor": 3, "isMobile": true }
+  },
+  "pages": [
+    {
+      "label": "hero",
+      "viewport": "desktop",
+      "before": [
+        { "action": "goto", "url": "https://english-redefine.chanmeng-dev.workers.dev/" },
+        { "action": "wait", "ms": 1500 }
+      ]
+    },
+    {
+      "label": "author-card",
+      "viewport": "desktop",
+      "before": [
+        { "action": "goto", "url": "https://english-redefine.chanmeng-dev.workers.dev/" },
+        { "action": "wait", "ms": 1500 },
+        { "action": "scroll", "by": 400 },
+        { "action": "wait", "ms": 500 }
+      ]
+    },
+    {
+      "label": "mobile-hero",
+      "viewport": "mobile",
+      "before": [
+        { "action": "goto", "url": "https://english-redefine.chanmeng-dev.workers.dev/" },
+        { "action": "wait", "ms": 1500 }
+      ]
+    }
+  ],
+  "demo": {
+    "size": { "width": 1280, "height": 800 },
+    "steps": [
+      { "action": "goto", "url": "https://english-redefine.chanmeng-dev.workers.dev/" },
+      { "action": "wait", "ms": 1500 },
+      { "action": "click", "selector": "input" },
+      { "action": "wait", "ms": 500 },
+      { "action": "fill", "selector": "input", "value": "serendipity", "delayMs": 80 },
+      { "action": "wait", "ms": 800 },
+      { "action": "click", "selector": "button" },
+      { "action": "wait", "ms": 8000 }
+    ]
+  }
+}
